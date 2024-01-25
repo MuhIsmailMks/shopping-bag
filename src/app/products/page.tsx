@@ -6,22 +6,18 @@ import Navigation from '../components/Navigation';
 import { dimension, layout } from '../styles';
 import Image from 'next/image';
 
-import useShoppingBag, { ShoppingBagProvider } from '../context/ShoppingBagContext'; 
 
 // data
 import dataProducts from '../data/products.json' 
-import Card from '../components/Card';
 
 // image
 import mainImage from '../images/main-image-products.webp' 
 import mainImageTablet from '../images/main-image-products-tablet.webp' 
 import mainImagePhone from '../images/main-image-products-handphone.webp' 
 import ShoppingBag from '../components/ShoppingBag';
-import Product from '../components/Product';
-import { useSelector } from 'react-redux';
+import Product from '../components/Product'; 
 
-export default function products (){  
-  const {product,total,quantity} = useSelector((store) => store.shopping)
+export default function products (){   
 
   const [dimensions, setDimensions] = React.useState({
     width: window.innerWidth,
