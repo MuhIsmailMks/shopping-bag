@@ -112,7 +112,7 @@ export default function Product(item) {
       {/* new product */}
       { item.newProduct ? (
               <div className={`new-product  ${layout.flexCenter} ${productComponentStyles.newProductStyle} `}>
-              <p className={`${textStyles.verySmallLato} font-[100] h-[100%]`}>New</p>
+              <p className={`${textStyles.verySmallLato} font-[100] h-[100%] text-white`}>New</p>
             </div>
         ):null} 
 

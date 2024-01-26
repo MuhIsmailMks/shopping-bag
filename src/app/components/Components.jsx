@@ -5,10 +5,23 @@ import layout,{productCardStyles} from '../styles';
  
 
 // images
-import star from 'icons/star.svg'
-import bg_star from 'icons/empty-star.svg'
-import halfStar from 'icons/half-star.svg' 
+// import star from '../icons/star.svg'
+import bg_star from '../icons/empty-star.svg'
+import halfStar from '../icons/half-star.svg' 
 
+
+// header
+export const MenuButton = ({click}) => { 
+  return(
+      <button className='text-yellow-400 relative max-mobile:hidden  mobile:ml-[3vw]'   onClick={click}> 
+          <svg className='w-[30px] h-auto x-phone:w-[25px]' viewBox="0 0 55 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="13.75" width="41.25" height="5" fill="#439CEF"/>
+              <rect x="21.0833" y="28" width="33.9167" height="5" fill="#439CEF"/>
+              <rect y="14" width="55" height="5" fill="#439CEF"/>
+          </svg> 
+      </button>
+  )
+}
 
 // rating product
 const RatingStar = () => {
@@ -16,7 +29,9 @@ const RatingStar = () => {
        <>
         <Image
         alt="star icon"
-        src={star}  
+        src='./icons/star.svg'  
+        width={10}
+        height={10}
         className={`${productCardStyles.ratingSizeStar}   object-contain`}
         priority
        />  
@@ -84,5 +99,6 @@ export const RatingProduct = ({ratingVal}) => {
 };
 
 export default {
+    MenuButton,
     RatingProduct, 
 }

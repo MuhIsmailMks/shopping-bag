@@ -13,13 +13,6 @@ import image3HeroMobile from '../images/heroImage3mobile.webp'
 import image4HeroDesk from '../images/heroImage4.png'
 import image4HeroMobile from '../images/heroimage4mobile.webp'
 
-// special product
-import specialProduct1 from '../images/specialProduct1.webp'
-import specialProduct2 from '../images/specialProduct1.webp'
-import specialProduct3 from '../images/specialProduct1.webp'
-import specialProduct4 from '../images/specialProduct1.webp'
-import specialProduct5 from '../images/specialProduct1.webp'
-
  
 // images products
 import earbudsV5 from '../images/earbuds.png'

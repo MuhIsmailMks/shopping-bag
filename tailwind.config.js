@@ -22,6 +22,7 @@ module.exports = {
         //  breakpoints device
         's_desktop-xl_tablet': {'max': '1400px', 'min': '800px'},   
         'mobile': { 'max': '1100px' },
+        'max-mobile': { 'min': '1100px' },
         'phone-mtablet': { 'max': '800px' },
 
         // tablet

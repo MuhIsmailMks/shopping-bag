@@ -55,11 +55,11 @@ export default function Navigation() {
             id={menu === true ? "activeMenu" : "noActiveMenu"}
           >
             <ul className={`text-black flex    mobile:gap-[3rem] mobile:h-full mobile:flex-col   s-tablet:gap-[1.125rem]  ${textStyles.smallInter}`}>
-              <li >
+              <li className='active'>
                <Link className={currentRoute === '/' ? "active" : ""} href={'/'}>Home</Link>
               </li>
               <li > 
-                <Link className={currentRoute === '/products/' ? "active" : ""} href='/products/'>Products</Link>
+                <Link className={currentRoute === '/products/' ? "active" : ""} href='#'>Products</Link>
               </li>
               <li  >
                 <a href="#" >About Us</a>

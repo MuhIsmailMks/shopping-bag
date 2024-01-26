@@ -14,21 +14,23 @@ body{
 }
 /* font-Lato text-[1rem] mobile:text-[.85rem] phone:text-[.7rem] */
 nav ul li{   
-    @apply w-[120px] h-[25px] relative flex items-center justify-center mobile:h-[40px] mobile:w-full phone:mt-5;
+    @apply w-[120px] h-[25px] relative flex items-center justify-center mobile:h-[40px] mobile:w-full phone:mt-5 cursor-not-allowed;
+}
+
+nav ul li.active,
+nav ul li.active a{
+    @apply cursor-default;
 }
  
 nav  ul li a{   
     @apply   relative text-[#5A5A5A] ease-in-out duration-200  mobile:text-right  mobile:w-full  mobile:h-full  mobile:flex  mobile:items-center  mobile:justify-center   phone:w-[100px]
-    ; 
+    cursor-not-allowed ; 
 }
  
 nav ul li a.active{
     @apply text-black;
 }
-  
-nav li:hover:not(li:last-child) a{
-    @apply text-primary-color ease-in;
-}
+   
  
  
 nav ul li a.active::before{
