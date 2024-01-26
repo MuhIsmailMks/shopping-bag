@@ -2,14 +2,6 @@ import React,{useState,useEffect} from 'react'
 import Image from "next/image"; 
 import layout,{productCardStyles} from '../styles';
 
- 
-
-// images
-// import star from '../icons/star.svg'
-import bg_star from '../icons/empty-star.svg'
-import halfStar from '../icons/half-star.svg' 
-
-
 // header
 export const MenuButton = ({click}) => { 
   return(
@@ -45,7 +37,9 @@ const RatingHalfStar = () => {
      <>
       <Image
       alt="star icon"
-      src={halfStar}  
+      src='./icons/half-star.svg'  
+      width={10}
+      height={10}  
       className={`${productCardStyles.ratingSizeStar}   object-contain`}
       priority
     />  
@@ -59,7 +53,9 @@ const EmptyStar = () => {
        <>
         <Image
         alt="star icon"
-        src={bg_star}  
+        src='./icons/empty-star.svg'  
+        width={10}
+        height={10}  
         className={`${productCardStyles.ratingSizeStar}   object-contain`}
         priority
       />  

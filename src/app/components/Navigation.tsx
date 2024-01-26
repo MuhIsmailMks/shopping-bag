@@ -42,7 +42,7 @@ export default function Navigation() {
 
           <div className="logo w-auto phone:h-[23px] tablet:h-[30px] ">
             <Image
-              src='/icons/web-icon.svg'
+              src='./icons/web-icon.svg'
               alt="logo"
               height={20}
               width={20}
@@ -75,9 +75,9 @@ export default function Navigation() {
           >
             
             {[
-              { icon: '/icons/search-icon.svg', alt: "search Icon" },
-              { icon: '/icons/account-icon.svg', alt: "account Icon" },
-              { icon: '/icons/bag-nav-icon.svg' , alt: "bag icon",handler:true,quantity:true ,class:'bag'},
+              { icon: './icons/search-icon.svg', alt: "search Icon" },
+              { icon: './icons/account-icon.svg', alt: "account Icon" },
+              { icon: './icons/bag-nav-icon.svg' , alt: "bag icon",handler:true,quantity:true ,class:'bag'},
             ].map((image, i) => (
               <span className={`navigation-handler cursor-pointer relative ${image.class? image.class : ''}`} key={i}  
               onClick={image.handler === true ?  handleBagClick : null } >

@@ -87,7 +87,7 @@ export default function Product(item) {
 
       {/* image product */}
        <Image
-          src={item.imageUrl} 
+          src={`${item.imageUrl}`} 
           width={100}
           height={100}
           className={`w-[50%] h-[auto]  duration-[500ms]`}

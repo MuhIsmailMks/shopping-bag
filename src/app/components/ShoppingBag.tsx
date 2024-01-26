@@ -69,7 +69,7 @@ export default function ShoppingBag( ) {
           <h1 className={`${shoppingBagContainer.textHeading}`}>Bag</h1>
           <button id='close-bag' className={`${shoppingBagContainer.closeButton}`}  onClick={() => handleCloseClick()}>
             <Image
-              src={'/icons/close-bag-btn.svg'}
+              src={'./icons/close-bag-btn.svg'}
               height={10}
               width={10}
               alt='closeButton'
@@ -122,7 +122,7 @@ export default function ShoppingBag( ) {
                    {
                     dimensions.width >= 1100 ? null :   <div className={`drop-checkout-btn abso duration-[500ms] ${drop === false ? 'rotate-180' :''}`} onClick={() => dropdownCheck()}>
                       <Image
-                        src='icons/dropdown-checkout.svg'
+                        src='./icons/dropdown-checkout.svg'
                         alt='checkout btn'
                         height={20}
                         width={20}
@@ -144,10 +144,10 @@ export default function ShoppingBag( ) {
                       <div className="payment flex gap-[.5rem]">
                     
                       {[
-                  { icon: '/icons/mastercard-icon.svg', alt: "mastercard " },
-                  { icon: '/icons/paypal-icon.svg', alt: "paypal " },
-                  { icon: '/icons/visa-icon.svg' , alt: "bag "},
-                  { icon: '/icons/debit-icon.svg' , alt: "debit "},
+                  { icon: './icons/mastercard-icon.svg', alt: "mastercard " },
+                  { icon: './icons/paypal-icon.svg', alt: "paypal " },
+                  { icon: './icons/visa-icon.svg' , alt: "bag "},
+                  { icon: './icons/debit-icon.svg' , alt: "debit "},
                 ].map((image, i) => (
                 
                     <Image
